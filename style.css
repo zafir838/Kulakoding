@@ -6,9 +6,12 @@ body {
 }
 
 header {
-  background: #0d0246;
+  background: linear-gradient(to right, #03063f);
   color: white;
-  padding: 25px;
+  padding: 40px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-color: #d7f2ef;
 }
 
 section {
