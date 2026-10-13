@@ -8,7 +8,7 @@ body {
 header {
   background: linear-gradient(to right, #03063f);
   color: white;
-  padding: 40px;
+  padding: 28px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
   text-color: #d7f2ef;
@@ -22,13 +22,26 @@ section {
   padding: 25px;
 }
 
+.game-headline {
+  background: white;
+  max-width: 445px;
+  margin: auto;
+  padding: 8px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
 .daftar-game {
   background: white;
-  max-width: 500px;
+  max-width: 1200px;
   margin: auto;
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 
 button {
@@ -50,7 +63,7 @@ button {
 
 .game-thumb {
   margin-top: 10px;
-  width: 75%; /* Membuat lebar gambar memenuhi kotak kartu */
+  width: 340px; /* Membuat lebar gambar memenuhi kotak kartu */
   height: 225px; /* Menentukan tinggi tetap untuk semua gambar */
   object-fit: cover; /* Rahasia agar gambar tidak gepeng/melar (memotong secara proporsional) */
   border-radius: 12px 12px 0 0; /* Melengkungkan sudut atas gambar agar menyatu dengan card */
