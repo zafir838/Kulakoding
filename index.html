@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <header>
-    <h1>🎮 Kaza Game Studio</h1>
+    <h1 class="headline">🎮 Kaza Game Studio</h1>
     <p>Studio game kreatif untuk semua</p>
     <link rel="stylesheet" href="style.css" />
   </header>
@@ -47,13 +47,21 @@
         document.getElementById("hasil").innerHTML = "Harga paket: Rp" + harga;
       }
 
-      let namaGame = ["Game 1", "Game 2", "Game 3", "Game 4", "Game 5"];
+      let daftarGameStudio = [
+        { nama: "Game 1", gambar: "balloonthumb.png" },
+        { nama: "Game 2", gambar: "contoh.jpeg" },
+        { nama: "Game 3", gambar: "spacejump.jpg" },
+      ];
 
-      for (let i = 0; i < namaGame.length; i++) {
+      for (let i = 0; i < daftarGameStudio.length; i++) {
         document.getElementById("daftar-game").innerHTML +=
           "<div class='game-card'>" +
           "<h3>🎮 " +
-          namaGame[i] +
+          daftarGameStudio[i].nama +
+          "<br>" +
+          "<img src='" +
+          daftarGameStudio[i].gambar +
+          "' class='game-thumb'>" +
           "</h3>" +
           "<p>Game dari studio saya</p>" +
           "</div>";

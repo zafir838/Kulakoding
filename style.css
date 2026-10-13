@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f4f4;
+  background: #f3fbfa;
   text-align: center;
 }
 
@@ -11,6 +11,10 @@ header {
   padding: 40px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-color: #d7f2ef;
+}
+
+.headline {
   text-color: #d7f2ef;
 }
 
@@ -24,19 +28,37 @@ section {
   margin: auto;
   padding: 30px;
   border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 button {
-  padding: 10px 18px;
+  padding: 8px 14px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  color: white;
+  background: linear-gradient(to right, #03063f, #101038);
 }
 
 .game-card {
-  background-color: white;
+  background: linear-gradient(to right, #03063f, #101038);
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.game-thumb {
+  margin-top: 10px;
+  width: 75%; /* Membuat lebar gambar memenuhi kotak kartu */
+  height: 225px; /* Menentukan tinggi tetap untuk semua gambar */
+  object-fit: cover; /* Rahasia agar gambar tidak gepeng/melar (memotong secara proporsional) */
+  border-radius: 12px 12px 0 0; /* Melengkungkan sudut atas gambar agar menyatu dengan card */
+}
+
+footer {
+  background: linear-gradient(to right, #03063f);
+  color: white;
   padding: 20px;
-  margin: 12px auto;
-  max-width: 450px;
-  border-radius: 12px;
+  text-align: center;
 }
