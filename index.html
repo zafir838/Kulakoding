@@ -50,20 +50,35 @@
       }
 
       let daftarGameStudio = [
-        { nama: "Game 1", gambar: "balloonthumb.png" },
-        { nama: "Game 2", gambar: "contoh.jpeg" },
-        { nama: "Game 3", gambar: "spacejump.jpg" },
+        {
+          nama: "Game 1",
+          gambar: "balloonthumb.png",
+          link: "https://scratch.mit.edu/projects/1382996054",
+        },
+        {
+          nama: "Game 2",
+          gambar: "contoh.jpeg",
+          link: "https://scratch.mit.edu/projects/1382996055",
+        },
+        {
+          nama: "Game 3",
+          gambar: "spacejump.jpg",
+          link: "https://scratch.mit.edu/projects/1382996056",
+        },
       ];
 
       for (let i = 0; i < daftarGameStudio.length; i++) {
         document.getElementById("daftar-game").innerHTML +=
           "<div class='game-card'>" +
-          "<h3>🎮 " +
-          daftarGameStudio[i].nama +
-          "<br>" +
+          "<a href='" +
+          daftarGameStudio[i].link +
+          "' target='_blank'>" +
           "<img src='" +
           daftarGameStudio[i].gambar +
           "' class='game-thumb'>" +
+          "</a>" +
+          "<h3>🎮 " +
+          daftarGameStudio[i].nama +
           "</h3>" +
           "<p>Game dari studio saya</p>" +
           "</div>";
