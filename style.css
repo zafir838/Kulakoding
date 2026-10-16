@@ -5,9 +5,17 @@ body {
   text-align: center;
 }
 
-header {
+.HeadText {
   background: linear-gradient(to right, #03063f);
-  color: white;
+  color: #d7f2ef;
+  padding: 28px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  border-radius: 15px;
+}
+
+header {
+  color: #d7f2ef;
   padding: 28px;
   text-align: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
@@ -58,10 +66,10 @@ button {
 
 .game-thumb {
   margin-top: 10px;
-  width: 340px; /* Membuat lebar gambar memenuhi kotak kartu */
-  height: 225px; /* Menentukan tinggi tetap untuk semua gambar */
-  object-fit: cover; /* Rahasia agar gambar tidak gepeng/melar (memotong secara proporsional) */
-  border-radius: 12px 12px 0 0; /* Melengkungkan sudut atas gambar agar menyatu dengan card */
+  width: 340px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
 footer {
