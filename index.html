@@ -55,26 +55,20 @@
         {
           nama: "Balloons Pop!",
           gambar: "balloonthumb.png",
-          link: "https://scratch.mit.edu/projects/1382996054",
         },
         {
           nama: "Game 2",
           gambar: "contoh.jpeg",
-          link: "https://scratch.mit.edu/projects/1382996055",
         },
         {
           nama: "Game 3",
           gambar: "apakek.png",
-          link: "https://scratch.mit.edu/projects/1382996056",
         },
       ];
 
       for (let i = 0; i < daftarGameStudio.length; i++) {
         document.getElementById("daftar-game").innerHTML +=
           "<div class='game-card'>" +
-          "<a href='" +
-          daftarGameStudio[i].link +
-          "' target='_blank'>" +
           "<img src='" +
           daftarGameStudio[i].gambar +
           "' class='game-thumb'>" +
